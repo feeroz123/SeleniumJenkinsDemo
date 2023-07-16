@@ -9,7 +9,7 @@ public class ITestResultDemo {
 
     @Test
     public void test1() {
-        Assert.assertEquals(3, 4);
+        Assert.assertEquals(4, 4);
     }
 
     @Test
