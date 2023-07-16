@@ -2,7 +2,7 @@
 <suite name="Test Execution Demo Suite">
     <test name="Facebook Login Test">
         <classes>
-            <class name="org.example.FacebookTest"></class>
+            <class name="org.example.facebook.FacebookTest"></class>
         </classes>
     </test>
 </suite>

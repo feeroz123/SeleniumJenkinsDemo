@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Generic Execution Demo Suite">
+    <test name="Generic Test">
+        <classes>
+            <class name="org.example.generic.ITestResultDemo"></class>
+        </classes>
+    </test>
+</suite>
