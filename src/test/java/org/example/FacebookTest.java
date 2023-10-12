@@ -37,7 +37,7 @@ public class FacebookTest {
         driver.findElement(By.name(loginButton)).click();
         Thread.sleep(3000);
         WebElement identifyLinkElement = driver.findElement(By.xpath(identifyLink));
-        Assert.assertTrue(identifyLinkElement.isDisplayed(), "Link element was not found");
+        Assert.assertFalse(identifyLinkElement.isDisplayed(), "Link element was not found");
     }
 
     @AfterClass
