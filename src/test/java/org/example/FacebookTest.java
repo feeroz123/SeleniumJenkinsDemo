@@ -19,7 +19,7 @@ public class FacebookTest {
     String email = "email";
     String pwd = "pass";
     String loginButton = "login";
-    String identifyLink = "//a[contains(@href,'identify')]";
+    String errorMessage = "error-box";
 
     @BeforeClass
     void setup() {
@@ -36,8 +36,8 @@ public class FacebookTest {
         driver.findElement(By.id(pwd)).sendKeys("dummyPassword");
         driver.findElement(By.name(loginButton)).click();
         Thread.sleep(3000);
-        WebElement identifyLinkElement = driver.findElement(By.xpath(identifyLink));
-        Assert.assertTrue(identifyLinkElement.isDisplayed(), "Link element was not found");
+        WebElement errorMessageElement = driver.findElement(By.id(errorMessage));
+        Assert.assertTrue(errorMessageElement.isDisplayed(), "Link element was not found");
     }
 
     @AfterClass
