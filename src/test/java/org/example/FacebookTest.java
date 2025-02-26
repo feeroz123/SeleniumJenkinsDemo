@@ -19,7 +19,7 @@ public class FacebookTest {
     String email = "email";
     String pwd = "pass";
     String loginButton = "login";
-    String errorMessage = "error-box";
+    String errorMessage = "error_box";
 
     @BeforeClass
     void setup() {
